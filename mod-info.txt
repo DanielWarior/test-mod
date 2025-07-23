@@ -6,3 +6,6 @@ tags: what are tags for
 
 thumbnail: test.png
 minVersion:  1.15p11
+
+[music]
+sourceFolder: music/
