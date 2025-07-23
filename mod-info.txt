@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [mod]
 title:I dno what I am doing
 description: still don't know what I am doing
@@ -10,3 +11,17 @@ minVersion:  1.15p11
 [music]
 sourceFolder: music
 whenUsingUnitsFromThisMod_playExclusively: true
+=======
+[mod]
+title:I dno what I am doing
+description: still don't know what I am doing
+
+tags: what are tags for
+
+thumbnail: test.png
+minVersion:  1.15p11
+
+[music]
+sourceFolder: music
+whenUsingUnitsFromThisMod_playExclusively: true
+>>>>>>> 73f70bd9d935468fcda336df85c61eed8a1a5214
