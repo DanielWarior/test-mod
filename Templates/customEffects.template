@@ -1,0 +1,14 @@
+#custom effect script
+[core]
+
+[effect_bullet_hit]
+image:ROOT:shared\graphics\bullet_hit.png
+
+life: 200
+alpha: 1.0
+fadeOut: true
+total_frames:6
+animateFrameStart:0
+animateFrameEnd:5
+animateFrameSpeed:0.7
+#color:
