@@ -1,8 +1,8 @@
 [mod]
-title:I dno what I am doing
-description: still don't know what I am doing
+title:Tree gang's mod
+description: Full conversion mod to surpass metal gear
 
-tags: what are tags for
+tags: Full conversion, Units, Buildings
 
 thumbnail: test.png
 minVersion:  1.15p11
