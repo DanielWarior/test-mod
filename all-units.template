@@ -1,0 +1,10 @@
+[core]
+tags:repairable
+
+[hiddenAction_noRepairWhileAttacked]
+autoTrigger: if self.hasTakenDamage(withinSeconds = 3)
+temporarilyRemoveTags:repairable
+
+[hiddenAction_noRepairWhileAttacked_revert]
+autoTrigger: if self.hasTakenDamage(laterThanSeconds = 3)
+temporarilyAddTags:repairable
