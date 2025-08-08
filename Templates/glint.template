@@ -1,0 +1,72 @@
+
+[core]
+name: glint
+mass: 0
+radius: 5
+price: 0
+maxHp: 1
+
+showInEditor: false
+showOnMinimap: false
+
+fogOfWarSightRange: 0
+disableAllUnitCollisions: true
+isUnrepairableUnit: true
+isUnselectable: true
+canNotBeDirectlyAttacked: true
+explodeOnDeath: false
+
+
+
+[graphics]
+image: ROOT:\shared\graphics\glint.png
+
+lock_body_rotation_with_main_turret: true
+
+
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: true
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+maxAttackRange: 150
+
+
+
+[turret_1]
+x: 0
+y: 0
+projectile: 1
+turnSpeed: 2
+barrelY: 4
+
+delay: 1s
+
+aimOffsetSpread: 0
+
+invisible: true
+shoot_sound:ROOT:sounds\Oculian_Armada\ocua_glint_fire1.wav
+shoot_sound_vol:0.125
+
+
+
+[projectile_1]
+life: 15
+deflectionPower: -1
+
+directDamage: 15
+
+instant: true
+moveWithParent: true
+
+color: #9bff9b
+explodeEffect: NONE
+explodeEffectOnShield: NONE
+beamImage: SHARED:beam3.png
+beamImageEnd: SHARED:beam1_end.png
+
+
+
+[movement]
+movementType: NONE
