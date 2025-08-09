@@ -1,0 +1,73 @@
+
+[core]
+name: deci_pixie
+mass: 0
+radius: 5
+price: 0
+maxHp: 1
+
+showInEditor: false
+showOnMinimap: false
+
+fogOfWarSightRange: 0
+disableAllUnitCollisions: true
+isUnrepairableUnit: true
+isUnselectable: true
+canNotBeDirectlyAttacked: true
+explodeOnDeath: false
+
+
+
+[graphics]
+image: ROOT:\shared\graphics\pixie.png
+
+lock_body_rotation_with_main_turret: true
+
+
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: false
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+maxAttackRange: 175
+
+
+
+[turret_1]
+x: 0
+y: 0
+projectile: 1
+turnSpeed: 1.5
+barrelY: 8
+
+delay: 3.5s
+
+aimOffsetSpread: 0
+canOnlyAttackUnitsWithoutTags: missile
+
+invisible: true
+shoot_sound:ROOT:sounds\Oculian_Armada\ocua_pixie_fire1.wav
+shoot_sound_vol:0.25
+
+
+
+[projectile_1]
+life: 300
+deflectionPower: -1
+
+directDamage: 30
+areaDamage: 30
+areaRadius: 25
+
+speed: 10
+
+color: #ff6496
+drawSize: 2
+lightSize: 0.4
+lightColor: #ff6496
+
+
+
+[movement]
+movementType: NONE
