@@ -1,6 +1,5 @@
 [core]
-tags:repairable
-
+#tags:repairable
 #-temporarily disabled
 
 #[hiddenAction_noRepairWhileAttacked]
