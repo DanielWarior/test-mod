@@ -1,7 +1,5 @@
 [core]
-tags:repairable
-
-<<<<<<< Updated upstream
+#tags:repairable
 #-temporarily disabled
 
 #[hiddenAction_noRepairWhileAttacked]
@@ -11,12 +9,3 @@ tags:repairable
 #[hiddenAction_noRepairWhileAttacked_revert]
 #autoTrigger: if self.hasTakenDamage(laterThanSeconds = 3)
 #temporarilyAddTags:repairable
-=======
-[hiddenAction_noRepairWhileAttacked]
-autoTrigger: if self.hasTakenDamage(withinSeconds = 3) and self.completed()
-temporarilyRemoveTags:repairable
-
-[hiddenAction_noRepairWhileAttacked_revert]
-autoTrigger: if self.hasTakenDamage(laterThanSeconds = 3) and self.completed()
-temporarilyAddTags:repairable
->>>>>>> Stashed changes
