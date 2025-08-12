@@ -42,3 +42,33 @@ animateFrameSpeed:0.4
 animateFrameLooping:true
 fadeInTime:10
 #color:
+
+[effect_flame_start_2]
+image:ROOT:shared\graphics\flame_start_2.png
+
+life:60
+alpha:0.5
+fadeOut:true
+total_frames:8
+animateFrameStart:0
+animateFrameEnd:7
+animateFrameSpeed:0.2
+
+attachedToUnit: true
+yOffsetRelative:0
+animateFrameLooping:true
+fadeInTime:60
+
+[effect_napalm_explosion_2]
+image:ROOT:shared\graphics\napalm_explosion_2.png
+
+life: 50
+alpha: 0.5
+fadeOut: true
+total_frames:4
+animateFrameStart:0
+animateFrameEnd:3
+animateFrameSpeed:0.4
+animateFrameLooping:true
+fadeInTime:10
+
