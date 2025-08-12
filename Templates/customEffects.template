@@ -72,3 +72,17 @@ animateFrameSpeed:0.4
 animateFrameLooping:true
 fadeInTime:10
 
+[effect_flak_explode]
+image:ROOT:shared\graphics\flak_explosion.png
+
+life: 200
+alpha: 0.6
+fadeOut: true
+total_frames:6
+animateFrameStart:0
+animateFrameEnd:5
+animateFrameSpeed:0.25
+scaleTo:4.0
+scaleFrom:2.0
+
+alsoPlaySound:ROOT:sounds\flak_explosion_1.wav:0.3
