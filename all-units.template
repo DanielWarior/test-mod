@@ -1,4 +1,7 @@
 [core]
+#so you can't see with unfinished shit
+fogOfWarSightRangeWhileNotBuilt:2
+
 #tags:repairable
 #-temporarily disabled
 
