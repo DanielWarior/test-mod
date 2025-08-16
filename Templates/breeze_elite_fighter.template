@@ -1,0 +1,22 @@
+
+[core]
+name: breeze_elite
+
+showInEditor: false
+
+copyFrom: ROOT:units\Oculian_Armada\Breeze\breeze_elite.ini, ROOT:Templates\fighter.template
+tags: breezeelitefighter
+isUnselectableAsTarget: true
+canNotBeGivenOrdersByPlayer: true
+
+
+
+[graphics]
+image: ROOT:units\Oculian_Armada\Breeze\breeze_elite.png
+image_wreak: ROOT:units\Oculian_Armada\Breeze\breeze_elite_dead.png
+
+
+
+[hiddenAction_delete]
+autoTrigger: if not self.hasUnitInTeam(withTag='breezeelitesquad')
+deleteSelf: true

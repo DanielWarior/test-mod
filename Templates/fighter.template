@@ -1,0 +1,41 @@
+
+[hiddenAction_attack]
+autoTrigger: if self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=1000, greaterThan=0) and self.hasUnitInTeam(withTag='hangar', withinRange=500)
+clearAllWaypoints: true
+addWaypoint_type: attack
+addWaypoint_target_nearestUnit_tagged: targethangar
+addWaypoint_target_nearestUnit_team: enemy
+addWaypoint_target_nearestUnit_maxRange: 1000
+temporarilyAddTags: attacking
+
+
+
+[hiddenAction_stopattacking]
+autoTrigger: if not self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=1000, greaterThan=0)
+clearAllWaypoints: true
+temporarilyRemoveTags: attacking
+
+
+
+[hiddenAction_movehangar]
+autoTrigger: if self.hasUnitInTeam(withTag='hangar') and not self.hasUnitInTeam(withTag='hangar', withinRange=200) and not self.tags(includes='attacking')
+requireConditional: if not self.isAttacking()
+addWaypoint_type: move
+addWaypoint_target_nearestUnit_tagged: hangar
+addWaypoint_target_nearestUnit_team: own
+clearAllWaypoints: true
+
+
+
+[hiddenAction_movearound]
+autoTrigger: if self.hasUnitInTeam(withTag='hangar', withinRange=200) and not self.tags(includes='attacking')
+requireConditional: if not self.isAttacking()
+addWaypoint_type: move
+addWaypoint_position_randomOffsetFromSelf: 100, 100
+clearActiveWaypoint: true
+
+
+
+[hiddenAction_delete]
+autoTrigger: if not self.hasUnitInTeam(withTag='squad')
+deleteSelf: true

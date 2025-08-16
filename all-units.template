@@ -2,6 +2,14 @@
 #so you can't see with unfinished shit
 fogOfWarSightRangeWhileNotBuilt:2
 
+
+
+[hiddenAction_gettingtargeted]
+autoTriggerOnEvent: tookDamage(withTag='targethangar')
+temporarilyAddTags: targethangar
+
+
+
 #tags:repairable
 #-temporarily disabled
 
