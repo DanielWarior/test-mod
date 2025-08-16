@@ -1,0 +1,159 @@
+
+[core]
+name: hangar
+mass: 0
+radius: 5
+price: 0
+maxHp: 1
+
+showInEditor: false
+showOnMinimap: false
+
+tags: hangar
+fogOfWarSightRange: 0
+disableAllUnitCollisions: true
+isUnrepairableUnit: true
+isUnselectable: false
+canNotBeDirectlyAttacked: true
+explodeOnDeath: false
+
+
+
+[graphics]
+image: ROOT:\shared\graphics\shimmer.png
+
+lock_body_rotation_with_main_turret: true
+
+
+
+[attack]
+canAttack: true
+canAttackFlyingUnits: true
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+maxAttackRange: 500
+
+
+
+[turret_1]
+x: 0
+y: 0
+projectile: 1
+turnSpeed: 100
+
+delay: 1
+
+aimOffsetSpread: 0
+
+invisible: true
+
+
+
+[projectile_1]
+life: 1
+
+directDamage: 0
+areaDamage: 0
+areaRadius: 0
+
+instant: true
+
+invisible: true
+hitSound: false
+explodeEffect: NONE
+explodeEffectOnShield: NONE
+trailEffect: false
+largeHitEffect: false
+tags: targethangar
+
+
+
+[movement]
+movementType: NONE
+
+
+
+[action_selecting]
+text: Select Squadron
+pos: 0
+
+isVisible: if not self.tags(includes='selecting') and not self.tags(includes='selected')
+allowMultipleInQueue: false
+
+ai_isHighPriority: true
+
+buildSpeed: 0s
+
+temporarilyAddTags: selecting
+
+
+
+[action_unselecting]
+text: Unselect
+pos: 0
+
+isVisible: if self.tags(includes='selecting')
+allowMultipleInQueue: false
+
+ai_isDisabled: true
+
+buildSpeed: 0s
+
+temporarilyRemoveTags: selecting
+
+
+
+[action_remove]
+text: Remove
+pos: 0
+
+isVisible: if self.tags(includes='selected')
+allowMultipleInQueue: false
+
+ai_isDisabled: true
+
+buildSpeed: 0s
+
+temporarilyAddTags: selecting
+temporarilyRemoveTags: selected, breezesquad
+
+
+
+[action_breezesquad]
+text: Breeze Squadron
+description: 6 Breezes\n
+displayType: queueUnit
+pos: 1
+unitShownInUI: breeze
+
+descriptionAddFromUnit: breeze
+descriptionAddUnitStats: breeze
+
+price: 1000
+isVisible: if self.tags(includes='selecting')
+allowMultipleInQueue: false
+
+ai_isHighPriority: true
+
+buildSpeed: 4s
+
+temporarilyAddTags: selected, breezesquad
+temporarilyRemoveTags: selecting
+
+
+
+[hiddenAction_startbreezemake]
+autoTrigger: if self.numberOfUnitsInTeam(withTag='breezefighter', lessThan=6) and self.tags(includes='breezesquad') and not self.tags(includes='building')
+
+alsoQueueAction: breezemake
+
+temporarilyAddTags: building
+
+
+
+[hiddenAction_breezemake]
+buildSpeed: 4s
+
+produceUnits: breeze_fighter
+
+temporarilyRemoveTags: building
