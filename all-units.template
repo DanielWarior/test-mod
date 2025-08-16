@@ -10,6 +10,12 @@ temporarilyAddTags: targethangar
 
 
 
+[hiddenAction_stopgettingtargeted]
+autoTrigger: if not self.numberOfUnitsInEnemyTeam(withTag='hangar1', withinRange=1000, greaterThan=0)
+temporarilyRemoveTags: targethangar
+
+
+
 #tags:repairable
 #-temporarily disabled
 

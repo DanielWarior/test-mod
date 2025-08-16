@@ -1,6 +1,6 @@
 
 [hiddenAction_attack]
-autoTrigger: if self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=1000, greaterThan=0) and self.hasUnitInTeam(withTag='hangar', withinRange=500)
+autoTrigger: if self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=500, greaterThan=0) and self.hasUnitInTeam(withTag='hangar', withinRange=500)
 clearAllWaypoints: true
 addWaypoint_type: attack
 addWaypoint_target_nearestUnit_tagged: targethangar
@@ -11,9 +11,18 @@ temporarilyAddTags: attacking
 
 
 [hiddenAction_stopattacking]
-autoTrigger: if not self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=1000, greaterThan=0)
+autoTrigger: if not self.numberOfUnitsInEnemyTeam(withTag='targethangar', withinRange=500, greaterThan=0)
 clearAllWaypoints: true
 temporarilyRemoveTags: attacking
+
+
+
+[hiddenAction_toofar]
+autoTrigger: if self.hasUnitInTeam(withTag='hangar') and not self.hasUnitInTeam(withTag='hangar', withinRange=500)
+addWaypoint_type: move
+addWaypoint_target_nearestUnit_tagged: hangar
+addWaypoint_target_nearestUnit_team: own
+clearAllWaypoints: true
 
 
 
