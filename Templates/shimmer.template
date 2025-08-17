@@ -1,35 +1,38 @@
 
 [core]
-name: ocua_extractor_crystalline_t3
+name: shimmer
 mass: 0
 radius: 5
 price: 0
 maxHp: 1
 
+isBuilder: true
+
 showInEditor: false
 showOnMinimap: false
+
+ignoreInUnitCapCalculation: true
 
 fogOfWarSightRange: 0
 disableAllUnitCollisions: true
 isUnrepairableUnit: true
 isUnselectable: true
 canNotBeDirectlyAttacked: true
-explodeOnDeath: false
-isBuilder: true
+
 canRepairBuildings: true
 canRepairUnits: true
 autoRepair: true
-nanoRepairSpeed: 0.75
-nanoRangeForRepair: 300
+nanoRange: 150
+nanoRepairSpeed: 0.2
+
+explodeOnDeath: false
 
 
 
 [graphics]
-image: ocua_extractor_crystalline.png
-teamColoringMode: disabled
-imageScale: 1.15
+image: ROOT:\shared\graphics\shimmer.png
 
-total_frames: 2
+lock_body_rotation_with_main_turret: true
 
 
 
@@ -38,20 +41,12 @@ canAttack: false
 
 
 
-[animation_idle]
-onActions : idle
-pingPong: false
-KeyframeTimeScale: 0.25
-body_0s: {frame:0}
-body_0.5s: {frame:1}
-body_1s: {frame:1}
-
-
-
 [turret_1]
 x: 0
 y: 0
-canShoot: false
+turnSpeed: 2
+
+invisible: true
 
 
 
