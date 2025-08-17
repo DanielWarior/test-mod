@@ -23,7 +23,7 @@ canRepairBuildings: true
 canRepairUnits: true
 autoRepair: true
 nanoRange: 150
-nanoRepairSpeed: 0.2
+nanoRepairSpeed: 0.1
 
 explodeOnDeath: false
 
