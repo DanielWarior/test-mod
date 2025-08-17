@@ -1,0 +1,54 @@
+
+[core]
+name: shimmer
+mass: 0
+radius: 5
+price: 0
+maxHp: 1
+
+isBuilder: true
+
+showInEditor: false
+showOnMinimap: false
+
+ignoreInUnitCapCalculation: true
+
+fogOfWarSightRange: 0
+disableAllUnitCollisions: true
+isUnrepairableUnit: true
+isUnselectable: true
+canNotBeDirectlyAttacked: true
+
+canRepairBuildings: true
+canRepairUnits: true
+autoRepair: true
+nanoRange: 150
+nanoRepairSpeed: 0.2
+
+explodeOnDeath: false
+
+
+
+[graphics]
+image: ROOT:\shared\graphics\shimmer.png
+
+lock_body_rotation_with_main_turret: true
+
+
+
+[attack]
+canAttack: false
+
+
+
+[turret_1]
+x: 0
+y: 0
+turnSpeed: 2
+
+invisible: true
+
+
+
+[movement]
+movementType: NONE

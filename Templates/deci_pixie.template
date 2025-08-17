@@ -9,11 +9,14 @@ maxHp: 1
 showInEditor: false
 showOnMinimap: false
 
+ignoreInUnitCapCalculation: true
+
 fogOfWarSightRange: 0
 disableAllUnitCollisions: true
 isUnrepairableUnit: true
 isUnselectable: true
 canNotBeDirectlyAttacked: true
+
 explodeOnDeath: false
 
 
