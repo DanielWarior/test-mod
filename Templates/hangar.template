@@ -115,7 +115,30 @@ ai_isDisabled: true
 buildSpeed: 0s
 
 temporarilyAddTags: selecting
-temporarilyRemoveTags: selected, breezesquad, breezeelitesquad
+temporarilyRemoveTags: selected, small, breezesquad, breezeelitesquad
+
+
+
+[action_smallbreezesquad]
+text: Breeze Squadron
+description: 4 Breezes\n
+displayType: queueUnit
+pos: 2
+unitShownInUI: breeze
+
+descriptionAddFromUnit: breeze
+descriptionAddUnitStats: breeze
+
+price: 700
+isVisible: if self.tags(includes='selecting')
+allowMultipleInQueue: false
+
+ai_isHighPriority: true
+
+buildSpeed: 4s
+
+temporarilyAddTags: selected, small, breezesquad
+temporarilyRemoveTags: selecting
 
 
 
@@ -123,13 +146,13 @@ temporarilyRemoveTags: selected, breezesquad, breezeelitesquad
 text: Breeze Squadron
 description: 6 Breezes\n
 displayType: queueUnit
-pos: 1
+pos: 2
 unitShownInUI: breeze
 
 descriptionAddFromUnit: breeze
 descriptionAddUnitStats: breeze
 
-price: 1000
+price: 1050
 isVisible: if self.tags(includes='selecting')
 allowMultipleInQueue: false
 
@@ -146,13 +169,13 @@ temporarilyRemoveTags: selecting
 text: Breeze Elite Squadron
 description: 3 Breeze Elites\n
 displayType: queueUnit
-pos: 1
+pos: 3
 unitShownInUI: breeze_elite
 
 descriptionAddFromUnit: breeze_elite
 descriptionAddUnitStats: breeze_elite
 
-price: 1000
+price: 675
 isVisible: if self.tags(includes='selecting')
 allowMultipleInQueue: false
 
@@ -165,8 +188,17 @@ temporarilyRemoveTags: selecting
 
 
 
+[hiddenAction_startsmallbreezemake]
+autoTrigger: if self.numberOfUnitsInTeam(withTag='breezefighter', lessThan=4) and self.tags(includes='breezesquad') and not self.tags(includes='building') and self.tags(includes='small')
+
+alsoQueueAction: breezemake
+
+temporarilyAddTags: building
+
+
+
 [hiddenAction_startbreezemake]
-autoTrigger: if self.numberOfUnitsInTeam(withTag='breezefighter', lessThan=6) and self.tags(includes='breezesquad') and not self.tags(includes='building')
+autoTrigger: if self.numberOfUnitsInTeam(withTag='breezefighter', lessThan=6) and self.tags(includes='breezesquad') and not self.tags(includes='building') and not self.tags(includes='small')
 
 alsoQueueAction: breezemake
 
