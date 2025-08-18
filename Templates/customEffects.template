@@ -101,3 +101,18 @@ scaleTo:5.0
 scaleFrom:3.0
 color:#ffc6a1
 alsoPlaySound:ROOT:sounds\flak_explosion_1.wav:0.3
+
+[effect_bigExplosion]
+image:ROOT:shared\graphics\big_explosion.png
+
+life: 900
+alpha: 0.9
+fadeOut: true
+total_frames:10
+animateFrameStart:0
+animateFrameEnd:9
+animateFrameSpeed:0.25
+scaleTo:3.0
+scaleFrom:1.5
+color:#ff5500
+alsoPlaySound:ROOT:sounds\big_explosion_1.wav:0.8
