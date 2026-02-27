@@ -74,7 +74,6 @@ setUnitStats: moveSpeed = 0, maxAttackRange = 0
 temporarilyAddTags: iamstunned
 
 
-
 [global_resource_holmium]
 displayName: Holmium
 displayNameShort: Ho
@@ -86,6 +85,20 @@ displayNameHideWhenIconShownInText: true
 displayNameHideWhenIconShownInHUD: true
 iconImage: ROOT:shared\graphics\48px-Holmium_plate.png
 
+#Aea yoink
+[global_resource_maxFabs]
+#new fabricator limit
+displayPos: 3
+displayName: maxfabs
+hidden: false
+displayNameShort: Eco Limit
+displayNameShort_ru: Эко-Лимит
+displayName_zh: 最大数量资源制造仪
+displayColor: #f9a602
+displayWhenZero: false
+displayTextPrefix: LIMIT 
+displayTextPostfix: $
+hidden:true
 
 #tags:repairable
 #-temporarily disabled
