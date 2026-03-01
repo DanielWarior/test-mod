@@ -54,7 +54,7 @@ allowMultipleInQueue:false
 x: 0
 y: 0
 projectile: 1
-turnSpeed: 2
+turnSpeed: 4
 barrelY: 4
 
 delay: 1s
@@ -71,7 +71,7 @@ shoot_sound_vol:0.125
 life: 20
 deflectionPower: -1
 
-directDamage: 15
+directDamage: 20
 
 instant: true
 moveWithParent: true
