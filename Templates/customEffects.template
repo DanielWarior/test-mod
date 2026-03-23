@@ -71,6 +71,25 @@ color:#fba936
 
 alsoPlaySound:ROOT:sounds\shell_hit_1.wav:0.35
 
+[effect_flame_start_small]
+image:ROOT:shared\graphics\flame_start_small.png
+
+life:20
+alpha:0.8
+fadeOut:true
+total_frames:8
+animateFrameStart:0
+animateFrameEnd:7
+animateFrameSpeed:0.2
+#color:#ff5e00
+
+attachedToUnit: false
+
+yOffsetRelative:0
+animateFrameLooping:true
+fadeInTime:0
+
+
 [effect_flame_start]
 image:ROOT:shared\graphics\flame_start.png
 
