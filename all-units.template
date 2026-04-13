@@ -100,6 +100,17 @@ displayTextPrefix: LIMIT
 displayTextPostfix: $
 hidden:true
 
+[global_resource_thorium]
+displayName: Thorium
+displayNameShort: Th
+hidden:false
+displayWhenZero: false
+displayColor:#00cbf5
+displayTextPrefix: Thorium:  
+displayNameHideWhenIconShownInText: true
+displayNameHideWhenIconShownInHUD: true
+iconImage: ROOT:shared\graphics\thorium.png
+
 #tags:repairable
 #-temporarily disabled
 
