@@ -17,6 +17,23 @@ drawUnderUnits:true
 scaleFrom:1.55
 scaleTo:1.45
 
+[effect_coilgun_fire_medium]
+image:ROOT:shared\graphics\coilgun_fire_medium.png
+
+life:40
+alpha:1.0
+total_frames:5
+animateFrameStart:0
+animateFrameEnd:4
+animateFrameSpeed:0.3
+
+scaleFrom:0.8
+scaleTo:0.3
+
+attachedToUnit: true
+yOffsetRelative:7
+color:#9dfaff
+
 [effect_incendiary_grenade_explosion]
 image:ROOT:shared\graphics\napalm_explosion.png
 
