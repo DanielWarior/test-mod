@@ -1,5 +1,19 @@
 #custom effect script
 [core]
+[effect_BigBoom]
+image:ROOT:shared\graphics\shell_hit.png
+
+life: 250
+alpha: 1.0
+fadeOut: true
+total_frames:6
+animateFrameStart:0
+animateFrameEnd:5
+animateFrameSpeed:0.5
+color:#fba936
+
+alsoPlaySound:ROOT:sounds\bigBoom.wav:0.5
+
 [effect_flame_burning]
 image:ROOT:shared\graphics\flame.png
 life: 300
