@@ -2,7 +2,7 @@
 title:Tree gang's mod V:0.5.4 (No OST)
 description: Full conversion mod to surpass metal gear
 
-tags: Full conversion, Units, Buildings
+tags: Total Conversion,Full Conversion, Units, Buildings, PvP
 
 thumbnail: Thumbnail.png
 minVersion:  1.15p11
