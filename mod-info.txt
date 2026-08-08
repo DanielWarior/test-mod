@@ -8,5 +8,5 @@ thumbnail: Thumbnail.png
 minVersion:  1.15p11
 
 [music]
-sourceFolder: music
-whenUsingUnitsFromThisMod_playExclusively: true
+#sourceFolder: music
+#whenUsingUnitsFromThisMod_playExclusively: true
