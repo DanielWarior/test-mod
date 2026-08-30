@@ -1,0 +1,35 @@
+[core]
+class: CustomUnitMetadata
+price: 0
+maxHp: 1
+mass: 0
+
+buildSpeed: 0
+radius: 0
+
+showInEditor: false
+showOnMinimap: false
+ignoreInUnitCapCalculation: true
+disableAllUnitCollisions: true
+canNotBeDamaged: true
+canNotBeDirectlyAttacked: true
+isUnselectable: true
+hideScorchMark: true
+explodeOnDeath: false
+
+
+[graphics]
+image: ROOT:shared/graphics/blank.png
+drawLayer: bottom
+isVisibleToEnemies: false
+icon_zoomed_out_neverShow: true
+
+
+[attack]
+canAttack: false
+
+
+[movement]
+movementType: NONE
+moveSpeed: 0
+maxTurnSpeed: 0

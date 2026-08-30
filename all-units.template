@@ -100,6 +100,49 @@ displayTextPrefix: LIMIT
 displayTextPostfix: $
 hidden:true
 
+#-------------------------Timer
+[template_timer]
+displayPos: 1
+displayWhenZero: true
+displayColor: #03a9fc
+hidden: true
+displayTextPrefix:
+#________________________     Hour
+[global_resource_t_hours_a]
+@copyFromSection: template_timer
+hidden: false
+displayTextAppendResource: t_hours_b
+displayTextPrefix:Time -< 
+displayTextPrefix_ru:Время -<
+[global_resource_t_hours_b]
+@copyFromSection: template_timer
+displayTextAppendResource: t_minutes_a 
+displayTextPostfix:
+displayTextPostfix_ru: ч
+#________________________     Minute
+[global_resource_t_minutes_a]
+@copyFromSection: template_timer
+displayTextPrefix: :
+displayTextPrefix_ru: ас:
+displayTextAppendResource: t_minutes_b
+[global_resource_t_minutes_b]
+@copyFromSection: template_timer
+displayTextAppendResource: t_seconds_a 
+displayTextPostfix:
+displayTextPostfix_ru: м
+#________________________     Second
+[global_resource_t_seconds_a]
+@copyFromSection: template_timer
+displayTextAppendResource: t_seconds_b 
+displayTextPrefix: :
+displayTextPrefix_ru: ин:
+[global_resource_t_seconds_b]
+@copyFromSection: template_timer
+displayTextPostfix:  >-
+displayTextPostfix_ru: с>-
+#displayTextAppendResource: 
+#displayTextAppendResourceWithGap: true
+
 [global_resource_thorium]
 displayName: Thorium
 displayNameShort: Th
